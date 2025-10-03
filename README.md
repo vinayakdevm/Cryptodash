@@ -30,7 +30,3 @@ It provides live market data, candlestick charts, watchlists, and news in a clea
 - **ESLint + TSConfig** (code quality)
 
 ---
-
-
-npm run build
-npm run preview
