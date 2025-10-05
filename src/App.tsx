@@ -8,6 +8,7 @@ import { TopMovers } from './components/TopMovers';
 import { CryptoGrid } from './components/CryptoGrid';
 import { WatchlistWidget } from './components/WatchlistWidget';
 import { CoinDetailsModal } from './components/CoinDetailsModal';
+import { Footer } from './components/Footer';
 import type { Currency, Crypto } from './types/crypto';
 
 function AppContent() {
@@ -61,6 +62,8 @@ function AppContent() {
         currency={currency}
         onClose={() => setSelectedCoin(null)}
       />
+
+      <Footer />
     </div>
   );
 }
