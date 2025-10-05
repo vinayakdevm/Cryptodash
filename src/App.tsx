@@ -28,21 +28,24 @@ function AppContent() {
       {currentView === 'welcome' ? (
         <WelcomePage onGetStarted={() => setCurrentView('dashboard')} />
       ) : (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {currentView === 'dashboard' && (
-            <>
-              <GlobalMarketStats currency={currency} />
-              <TopMovers currency={currency} onCoinClick={setSelectedCoin} />
-            </>
-          )}
+        <div className="relative">
+          <div className="market-background absolute inset-0 pointer-events-none" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {currentView === 'dashboard' && (
+              <>
+                <GlobalMarketStats currency={currency} />
+                <TopMovers currency={currency} onCoinClick={setSelectedCoin} />
+              </>
+            )}
 
-          <CryptoGrid
-            currency={currency}
-            favorites={favorites}
-            onToggleFavorite={toggleFavorite}
-            onCoinClick={setSelectedCoin}
-            showOnlyFavorites={currentView === 'favorites'}
-          />
+            <CryptoGrid
+              currency={currency}
+              favorites={favorites}
+              onToggleFavorite={toggleFavorite}
+              onCoinClick={setSelectedCoin}
+              showOnlyFavorites={currentView === 'favorites'}
+            />
+          </div>
         </div>
       )}
 
