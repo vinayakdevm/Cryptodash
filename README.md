@@ -1,32 +1,51 @@
-# 🚀 CryptoDash – Real-Time Cryptocurrency Dashboard
+# 🚀 **CryptoDash – Real-Time Cryptocurrency Dashboard**
 
-CryptoDash is a modern, interactive **cryptocurrency tracking dashboard** built with **React, TypeScript, Vite, and Tailwind CSS**.  
-It provides live market data, candlestick charts, watchlists, and news in a clean, responsive, animated UI.
+[![React](https://img.shields.io/badge/React-18.0-blue?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwindcss)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite)](https://vitejs.dev/)
+[![Framer Motion](https://img.shields.io/badge/FramerMotion-Animation-EF5B5B?logo=framer)](https://www.framer.com/motion/)
+[![Version](https://img.shields.io/badge/version-2.0.0-brightgreen)](https://github.com/vinayakdevmishra/cryptodash/releases)
 
----
-
-## ✨ Features
-
-- **Welcome Page** – Animated intro with product highlights & CTA.
-- **Dark/Light Mode** – Seamless theme switching (saved to localStorage).
-- **Navbar** – All Coins / Favorites, currency select (USD/EUR/INR), theme toggle.
-- **Search & Sort** – Search by name/symbol; sort by market cap, price, or 24h %.
-- **Crypto Cards Grid** – Responsive cards with price, market cap, 24h change.
-- **Watchlist** – Star coins; floating watchlist widget with quick access.
-- **Global Market Stats** – Total market cap, 24h volume, BTC/ETH dominance.
-- **Top Gainers/Losers** – Biggest movers in the last 24h.
-- **Coin Details Modal** – Key info with quick actions.
-- **Advanced Candlestick Chart** – OHLC candles with 30D/90D ranges.
-- **Responsive + Animated** – Framer Motion transitions, mobile-first layout.
+> A sleek and modern cryptocurrency dashboard built with React, TypeScript, and TailwindCSS —  
+> featuring real-time market data, charts, animations, and personalized watchlists.
 
 ---
 
-## 🛠 Tech Stack
+## 🌟 **Highlights – v2.0.0**
 
-- **React + Vite + TypeScript**
-- **Tailwind CSS** (styling)
-- **Framer Motion** (animations)
-- **CoinGecko API** (markets, OHLC)
-- **ESLint + TSConfig** (code quality)
+- 🧭 **Watchlist Widget** – Floating, animated panel with real-time updates  
+- 🔍 **Smart Search** – Auto-suggestions for 100+ coins  
+- 💹 **Candlestick Charts** – Smooth 7D / 30D OHLC chart rendering  
+- ⚡ **Global Loader** – Elegant loading overlay with transitions  
+- 🎨 **Revamped UI** – Polished gradients, glassmorphism, improved readability  
+- 🌗 **Persistent Theme** – Light/Dark mode saved to localStorage  
+- 💬 **Faster Switching** – Optimized API abort control to prevent flickering
+
+---
+
+## ✨ **Core Features**
+
+| Category | Description |
+|-----------|--------------|
+| 💎 **Dashboard** | Clean layout showing top coins, gainers, and global stats |
+| 🌍 **Global Market Stats** | Market cap, volume, BTC/ETH dominance, and active markets |
+| 🔥 **Top Movers** | Animated cards for top gainers and losers (24h) |
+| 📊 **Candlestick Charts** | Detailed OHLC visualization with smooth framer-motion animation |
+| 🌈 **Watchlist Widget** | Floating button and slide-in sidebar for quick access |
+| 🔎 **Coin Search** | Real-time search with suggestion dropdown |
+| 🌓 **Dark/Light Theme** | Instantly toggles with smooth animations |
+| 💾 **State Persistence** | Favorites & preferences saved in localStorage |
+
+---
+
+## 🛠️ **Tech Stack**
+
+- ⚛️ **React + Vite + TypeScript**
+- 🎨 **Tailwind CSS** for styling
+- 🧠 **Framer Motion** for animation
+- 📈 **CoinGecko API** for live crypto data
+- 🌗 **Context API** for theme & global state
+- 🧩 **AbortController** for safe API requests
 
 ---
