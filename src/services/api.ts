@@ -1,6 +1,6 @@
 import type { Crypto, CoinDetails, ChartData, Currency, GlobalMarketData } from "../types/crypto";
 
-const BASE_URL = "/api/coingecko"; // ✅ Proxy path instead of full URL
+const BASE_URL = "https://api.coingecko.com/api/v3";
 
 export const api = {
   // ✅ Fetch list of coins with sparkline
@@ -28,7 +28,7 @@ export const api = {
     return data.data;
   },
 
-  // ✅ Fetch standard line-chart data (market_chart)
+  // ✅ Fetch standard line chart data
   async getCoinChartData(
     id: string,
     days: number = 30,
